@@ -2,7 +2,7 @@ node {
     stage('one') {
     echo 'one'
     }
-    agent('two') {
+    stage('two') {
     echo 'two'
     }
 }
