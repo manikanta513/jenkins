@@ -5,4 +5,10 @@ node {
     stage('two') {
     echo 'two'
     }
+    stage('three') {
+    echo 'three'
+    }
+    stage('four') {
+    echo 'four'
+    }
 }
