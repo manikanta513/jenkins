@@ -1,3 +1,4 @@
+def a='10'
 node {
     stage('one') {
     echo 'one'
