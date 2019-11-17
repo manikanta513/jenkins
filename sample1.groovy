@@ -1,5 +1,5 @@
 node {
-    stage ('one') {
+    stage('one') {
     echo 'one'
     }
     agent('two') {
