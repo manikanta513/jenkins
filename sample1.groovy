@@ -1,4 +1,4 @@
-node{
+node {
     agent('one') {
     echo 'one'
     }
