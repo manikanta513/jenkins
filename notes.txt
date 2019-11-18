@@ -26,6 +26,10 @@ pipeline() {
                 echo 'one'
             }
         }
-        stage('two')
+        stage('two') {
+            steps {
+                echo 'two'
+            }
+        }
     }
 }
