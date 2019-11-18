@@ -9,6 +9,8 @@ imperative:
 node{
     stage('one') {
         echo 'one'
+    }
+    stage('two') {
         
     }
 }
