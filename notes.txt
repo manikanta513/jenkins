@@ -11,6 +11,6 @@ node{
         echo 'one'
     }
     stage('two') {
-        
+        echo 'two'
     }
 }
