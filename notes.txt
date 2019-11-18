@@ -26,5 +26,6 @@ pipeline() {
                 echo 'one'
             }
         }
+        stage('two')
     }
 }
