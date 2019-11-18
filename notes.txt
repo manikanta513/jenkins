@@ -1,1 +1,1 @@
-jenkins is 
+jenkins is a CI/CD tool
