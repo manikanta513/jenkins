@@ -1,4 +1,9 @@
 jenkins is a CI/CD tool
 it supports 2 types of pipelines 
     . imperative
-    
+    . declarative
+
+
+imperative:
+
+node{}
