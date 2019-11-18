@@ -19,5 +19,6 @@ node {
 declarative:
 
 pipeline() {
-    
+    agent{ any }
+    stages
 }
