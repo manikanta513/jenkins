@@ -21,6 +21,6 @@ declarative:
 pipeline() {
     agent { any }
     stages {
-        stage
+        stage('one')
     }
 }
