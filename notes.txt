@@ -6,4 +6,6 @@ it supports 2 types of pipelines
 
 imperative:
 
-node{}
+node{
+    
+}
