@@ -39,4 +39,45 @@ pipeline() {
 
 
 
+seed plugin:
+------------ 
+------------
+it is used to create jobs using JOB DSL script
+
+creation of seed jobs:
+---------------------
+1. first create a freetstyle job with some name. then click on the job link > click configuration > select "Add build step" > select " process job dsls" > select checkbox "use the provided DSL script" and provide the script in that window > click save button 
+
+Job DSL Script:
+---------------
+
+job('DSL-Tutorial-1-Test') {
+    scm {
+        git('git://github.com/quidryan/aws-sdk-test.git')
+    }
+    triggers {
+        scm('H/15 * * * *')
+    }
+    steps {
+        maven('-e clean test')
+    }
+}
+
+
+Utility to generate seed job:
+----------------------------
+
+if we want to generate DSL script from jenkins job yes we can do using a utility. installation steps are given below with github url 
+
+https://github.com/rsacramento18/jenkinsxml2jobdsl
+
+$ git clone https://github.com/rsacramento18/jenkinsxml2jobdsl.git
+$ sudo yum install java-1.8.0-openjdk-devel -y 
+$ cd jenkinsxml2jobdsl
+$ ./gradlew build
+$ java -jar build/libs/jenkinsxml2jobdsl.jar -u admin -a admin -j <jenkins server> -p 8080 sample
+
+
+
+
 
