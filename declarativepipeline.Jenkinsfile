@@ -5,5 +5,5 @@ pipeline{
             steps{
                 sh 'echo hello world'
                  }
-    }
+            }
 }
